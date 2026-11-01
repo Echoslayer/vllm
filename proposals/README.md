@@ -22,3 +22,7 @@ No proposals have been confirmed. The initial area is `vllm/multimodal/media/` a
 參考：[專案選擇調研](../research/oss-candidates/vllm-llamacpp.md)、[教程查核](../research/tutorial-audit/README.md)、[探測式查核](../research/probe-audit/README.md)。
 
 References: [project selection research](../research/oss-candidates/vllm-llamacpp.md), [tutorial audit](../research/tutorial-audit/README.md), and [probe audit](../research/probe-audit/README.md).
+
+如何準備第一筆貢獻，先讀[貢獻研究導讀](../research/contributing/README.md)。本輪僅收集資料，尚未新增提案。
+
+For guidance on a first contribution, start with the [contribution research guide](../research/contributing/README.md). This round gathers evidence; it adds no proposal.

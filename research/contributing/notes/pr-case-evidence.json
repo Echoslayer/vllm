@@ -1,0 +1,765 @@
+{
+  "retrieved_at_utc": "2026-11-01T11:29:59.800785+00:00",
+  "method": "Purposeful six-case qualitative sample. All pages of comments, reviews, inline comments and files fetched using GitHub REST API. Counts are not independent interactions. No local execution or full CI-log audit.",
+  "cases": [
+    {
+      "additions": 19,
+      "association": "CONTRIBUTOR",
+      "author": "reda-maizate",
+      "changed_files": 2,
+      "closed_at": "2026-10-22T06:57:09Z",
+      "comments": 11,
+      "created_at": "2026-10-20T14:05:23Z",
+      "deletions": 1,
+      "draft": false,
+      "head": "73db5bb84b3ba28fbdcd1657396bb76110f3970b",
+      "html_url": "https://github.com/vllm-project/vllm/pull/62704",
+      "labels": [
+        "bug",
+        "ready",
+        "multi-modality"
+      ],
+      "merged": true,
+      "merged_at": "2026-10-22T06:57:09Z",
+      "number": 62704,
+      "review_comments": 2,
+      "state": "closed",
+      "title": "[Bugfix][Multimodal] Return 400 for structurally-corrupted PNG images",
+      "updated_at": "2026-10-22T06:57:09Z",
+      "body_sha256": "736ef77a12eeaa23ee387c265788333153cf6a52f1e5199c97359d8e08c8a58e",
+      "comments_index": [
+        {
+          "association": "NONE",
+          "created_at": "2026-10-20T14:06:33Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/62704#issuecomment-6292768951",
+          "type": "Bot",
+          "user": "github-actions[bot]"
+        },
+        {
+          "association": "MEMBER",
+          "created_at": "2026-10-21T12:34:15Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/62704#issuecomment-6316011205",
+          "type": "User",
+          "user": "DarkLight1337"
+        },
+        {
+          "association": "NONE",
+          "created_at": "2026-10-21T12:34:35Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/62704#issuecomment-6316017758",
+          "type": "Bot",
+          "user": "github-actions[bot]"
+        },
+        {
+          "association": "MEMBER",
+          "created_at": "2026-10-21T15:10:27Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/62704#issuecomment-6319381133",
+          "type": "User",
+          "user": "DarkLight1337"
+        },
+        {
+          "association": "NONE",
+          "created_at": "2026-10-21T15:10:47Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/62704#issuecomment-6319388039",
+          "type": "Bot",
+          "user": "github-actions[bot]"
+        },
+        {
+          "association": "MEMBER",
+          "created_at": "2026-10-21T17:52:38Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/62704#issuecomment-6322769634",
+          "type": "User",
+          "user": "DarkLight1337"
+        },
+        {
+          "association": "NONE",
+          "created_at": "2026-10-21T17:53:01Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/62704#issuecomment-6322777145",
+          "type": "Bot",
+          "user": "github-actions[bot]"
+        },
+        {
+          "association": "MEMBER",
+          "created_at": "2026-10-22T05:20:33Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/62704#issuecomment-6333379505",
+          "type": "User",
+          "user": "DarkLight1337"
+        },
+        {
+          "association": "NONE",
+          "created_at": "2026-10-22T05:20:51Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/62704#issuecomment-6333383644",
+          "type": "Bot",
+          "user": "github-actions[bot]"
+        },
+        {
+          "association": "MEMBER",
+          "created_at": "2026-10-22T05:28:13Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/62704#issuecomment-6333486261",
+          "type": "User",
+          "user": "DarkLight1337"
+        },
+        {
+          "association": "NONE",
+          "created_at": "2026-10-22T05:28:32Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/62704#issuecomment-6333490480",
+          "type": "Bot",
+          "user": "github-actions[bot]"
+        }
+      ],
+      "comments_fetched_count": 11,
+      "reviews_index": [
+        {
+          "association": "NONE",
+          "html_url": "https://github.com/vllm-project/vllm/pull/62704#pullrequestreview-5586184554",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-20T14:05:36Z",
+          "user": "claude[bot]"
+        },
+        {
+          "association": "MEMBER",
+          "html_url": "https://github.com/vllm-project/vllm/pull/62704#pullrequestreview-5598075372",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-21T10:06:53Z",
+          "user": "DarkLight1337"
+        },
+        {
+          "association": "CONTRIBUTOR",
+          "html_url": "https://github.com/vllm-project/vllm/pull/62704#pullrequestreview-5599562963",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-21T12:22:27Z",
+          "user": "reda-maizate"
+        },
+        {
+          "association": "MEMBER",
+          "html_url": "https://github.com/vllm-project/vllm/pull/62704#pullrequestreview-5599702502",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-21T12:34:03Z",
+          "user": "DarkLight1337"
+        }
+      ],
+      "reviews_fetched_count": 4,
+      "review_comments_index": [
+        {
+          "association": "MEMBER",
+          "created_at": "2026-10-21T10:06:53Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/62704#discussion_r4335519189",
+          "path": "vllm/multimodal/media/image.py",
+          "user": "DarkLight1337"
+        },
+        {
+          "association": "CONTRIBUTOR",
+          "created_at": "2026-10-21T12:22:27Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/62704#discussion_r4336712371",
+          "path": "vllm/multimodal/media/image.py",
+          "user": "reda-maizate"
+        }
+      ],
+      "review_comments_fetched_count": 2,
+      "files": [
+        {
+          "additions": 17,
+          "deletions": 0,
+          "filename": "tests/multimodal/media/test_image.py",
+          "status": "modified"
+        },
+        {
+          "additions": 2,
+          "deletions": 1,
+          "filename": "vllm/multimodal/media/image.py",
+          "status": "modified"
+        }
+      ],
+      "files_fetched_count": 2
+    },
+    {
+      "additions": 34,
+      "association": "CONTRIBUTOR",
+      "author": "hemuku90",
+      "changed_files": 3,
+      "closed_at": "2026-10-27T13:21:22Z",
+      "comments": 3,
+      "created_at": "2026-10-27T11:28:13Z",
+      "deletions": 3,
+      "draft": false,
+      "head": "a3e3c0927c6defef4c14f556aa047c97442e19e3",
+      "html_url": "https://github.com/vllm-project/vllm/pull/64032",
+      "labels": [
+        "bug",
+        "ready",
+        "multi-modality"
+      ],
+      "merged": true,
+      "merged_at": "2026-10-27T13:21:22Z",
+      "number": 64032,
+      "review_comments": 0,
+      "state": "closed",
+      "title": "[Bugfix][Multimodal] Return 400 when local media access is disabled",
+      "updated_at": "2026-10-27T13:21:23Z",
+      "body_sha256": "ded7bdd0df69b38e09dd964ccaf366464e40a9a40828b4aa1c9b6fd8c8d5c459",
+      "comments_index": [
+        {
+          "association": "NONE",
+          "created_at": "2026-10-27T11:28:22Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/64032#issuecomment-6440769253",
+          "type": "Bot",
+          "user": "github-actions[bot]"
+        },
+        {
+          "association": "MEMBER",
+          "created_at": "2026-10-27T11:53:56Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/64032#issuecomment-6441228226",
+          "type": "User",
+          "user": "DarkLight1337"
+        },
+        {
+          "association": "NONE",
+          "created_at": "2026-10-27T11:54:17Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/64032#issuecomment-6441234576",
+          "type": "Bot",
+          "user": "github-actions[bot]"
+        }
+      ],
+      "comments_fetched_count": 3,
+      "reviews_index": [
+        {
+          "association": "NONE",
+          "html_url": "https://github.com/vllm-project/vllm/pull/64032#pullrequestreview-5666339429",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-27T11:28:17Z",
+          "user": "claude[bot]"
+        },
+        {
+          "association": "MEMBER",
+          "html_url": "https://github.com/vllm-project/vllm/pull/64032#pullrequestreview-5666617317",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-27T11:53:44Z",
+          "user": "DarkLight1337"
+        }
+      ],
+      "reviews_fetched_count": 2,
+      "review_comments_index": [],
+      "review_comments_fetched_count": 0,
+      "files": [
+        {
+          "additions": 30,
+          "deletions": 0,
+          "filename": "tests/entrypoints/scale_out/render/test_render_multimodal.py",
+          "status": "modified"
+        },
+        {
+          "additions": 3,
+          "deletions": 2,
+          "filename": "tests/multimodal/media/test_connector.py",
+          "status": "modified"
+        },
+        {
+          "additions": 1,
+          "deletions": 1,
+          "filename": "vllm/multimodal/media/connector.py",
+          "status": "modified"
+        }
+      ],
+      "files_fetched_count": 3
+    },
+    {
+      "additions": 13,
+      "association": "CONTRIBUTOR",
+      "author": "mhuzaifa3",
+      "changed_files": 2,
+      "closed_at": "2026-08-25T17:31:43Z",
+      "comments": 2,
+      "created_at": "2026-08-25T14:32:04Z",
+      "deletions": 1,
+      "draft": false,
+      "head": "1647b2e0e827a67c4464bd3ddf40f8c246883126",
+      "html_url": "https://github.com/vllm-project/vllm/pull/53744",
+      "labels": [
+        "bug",
+        "ready",
+        "multi-modality"
+      ],
+      "merged": true,
+      "merged_at": "2026-08-25T17:31:43Z",
+      "number": 53744,
+      "review_comments": 0,
+      "state": "closed",
+      "title": "[Bugfix][Multimodal] Reject malformed base64 audio with 400 instead of 500",
+      "updated_at": "2026-08-25T17:31:43Z",
+      "body_sha256": "9f37381a2e1b310eece7fe53cdf67f11b8cafffe9c44a52819e2834f72dd93cb",
+      "comments_index": [
+        {
+          "association": "MEMBER",
+          "created_at": "2026-08-25T16:21:28Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/53744#issuecomment-5413403712",
+          "type": "User",
+          "user": "Isotr0py"
+        },
+        {
+          "association": "NONE",
+          "created_at": "2026-08-25T16:21:45Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/53744#issuecomment-5413407185",
+          "type": "Bot",
+          "user": "github-actions[bot]"
+        }
+      ],
+      "comments_fetched_count": 2,
+      "reviews_index": [
+        {
+          "association": "NONE",
+          "html_url": "https://github.com/vllm-project/vllm/pull/53744#pullrequestreview-5020182049",
+          "state": "COMMENTED",
+          "submitted_at": "2026-08-25T14:32:07Z",
+          "user": "claude[bot]"
+        },
+        {
+          "association": "MEMBER",
+          "html_url": "https://github.com/vllm-project/vllm/pull/53744#pullrequestreview-5021304697",
+          "state": "APPROVED",
+          "submitted_at": "2026-08-25T16:21:09Z",
+          "user": "Isotr0py"
+        }
+      ],
+      "reviews_fetched_count": 2,
+      "review_comments_index": [],
+      "review_comments_fetched_count": 0,
+      "files": [
+        {
+          "additions": 12,
+          "deletions": 0,
+          "filename": "tests/multimodal/media/test_audio.py",
+          "status": "modified"
+        },
+        {
+          "additions": 1,
+          "deletions": 1,
+          "filename": "vllm/multimodal/media/audio.py",
+          "status": "modified"
+        }
+      ],
+      "files_fetched_count": 2
+    },
+    {
+      "additions": 102,
+      "association": "CONTRIBUTOR",
+      "author": "mottopanikeiku",
+      "changed_files": 6,
+      "closed_at": "2026-10-16T23:09:13Z",
+      "comments": 6,
+      "created_at": "2026-10-16T08:46:46Z",
+      "deletions": 16,
+      "draft": false,
+      "head": "ee8f9c9b54b8348347ef8be24cec20e777483704",
+      "html_url": "https://github.com/vllm-project/vllm/pull/61986",
+      "labels": [
+        "bug",
+        "documentation",
+        "ready",
+        "multi-modality",
+        "verified"
+      ],
+      "merged": true,
+      "merged_at": "2026-10-16T23:09:13Z",
+      "number": 61986,
+      "review_comments": 4,
+      "state": "closed",
+      "title": "[Bugfix][Multimodal] Honor RGB PNG transparency when loading images",
+      "updated_at": "2026-10-16T23:09:13Z",
+      "body_sha256": "f038933b370645be36c877fd9f4f99692e01366def669f9ff4da68f62718bbda",
+      "comments_index": [
+        {
+          "association": "CONTRIBUTOR",
+          "created_at": "2026-10-16T08:47:23Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/61986#issuecomment-6211724426",
+          "type": "Bot",
+          "user": "mergify[bot]"
+        },
+        {
+          "association": "CONTRIBUTOR",
+          "created_at": "2026-10-16T08:49:38Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/61986#issuecomment-6211767241",
+          "type": "User",
+          "user": "mottopanikeiku"
+        },
+        {
+          "association": "MEMBER",
+          "created_at": "2026-10-16T08:51:18Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/61986#issuecomment-6211798455",
+          "type": "User",
+          "user": "DarkLight1337"
+        },
+        {
+          "association": "MEMBER",
+          "created_at": "2026-10-16T17:23:08Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/61986#issuecomment-6220946596",
+          "type": "User",
+          "user": "DarkLight1337"
+        },
+        {
+          "association": "MEMBER",
+          "created_at": "2026-10-16T17:37:03Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/61986#issuecomment-6221183539",
+          "type": "User",
+          "user": "DarkLight1337"
+        },
+        {
+          "association": "NONE",
+          "created_at": "2026-10-16T17:37:26Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/61986#issuecomment-6221190063",
+          "type": "Bot",
+          "user": "github-actions[bot]"
+        }
+      ],
+      "comments_fetched_count": 6,
+      "reviews_index": [
+        {
+          "association": "NONE",
+          "html_url": "https://github.com/vllm-project/vllm/pull/61986#pullrequestreview-5545232165",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-16T08:46:50Z",
+          "user": "claude[bot]"
+        },
+        {
+          "association": "MEMBER",
+          "html_url": "https://github.com/vllm-project/vllm/pull/61986#pullrequestreview-5545337610",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-16T08:55:37Z",
+          "user": "DarkLight1337"
+        },
+        {
+          "association": "NONE",
+          "html_url": "https://github.com/vllm-project/vllm/pull/61986#pullrequestreview-5545364591",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-16T08:57:56Z",
+          "user": "claude[bot]"
+        },
+        {
+          "association": "CONTRIBUTOR",
+          "html_url": "https://github.com/vllm-project/vllm/pull/61986#pullrequestreview-5545708016",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-16T09:26:34Z",
+          "user": "mottopanikeiku"
+        },
+        {
+          "association": "MEMBER",
+          "html_url": "https://github.com/vllm-project/vllm/pull/61986#pullrequestreview-5545765541",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-16T09:31:55Z",
+          "user": "DarkLight1337"
+        },
+        {
+          "association": "CONTRIBUTOR",
+          "html_url": "https://github.com/vllm-project/vllm/pull/61986#pullrequestreview-5551225933",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-16T17:18:17Z",
+          "user": "mottopanikeiku"
+        },
+        {
+          "association": "NONE",
+          "html_url": "https://github.com/vllm-project/vllm/pull/61986#pullrequestreview-5551342011",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-16T17:29:15Z",
+          "user": "claude[bot]"
+        }
+      ],
+      "reviews_fetched_count": 7,
+      "review_comments_index": [
+        {
+          "association": "NONE",
+          "created_at": "2026-10-16T08:57:56Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/61986#discussion_r4292733308",
+          "path": "vllm/multimodal/image.py",
+          "user": "claude[bot]"
+        },
+        {
+          "association": "CONTRIBUTOR",
+          "created_at": "2026-10-16T09:26:33Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/61986#discussion_r4293004732",
+          "path": "vllm/multimodal/image.py",
+          "user": "mottopanikeiku"
+        },
+        {
+          "association": "MEMBER",
+          "created_at": "2026-10-16T09:31:55Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/61986#discussion_r4293052333",
+          "path": "tests/multimodal/test_image.py",
+          "user": "DarkLight1337"
+        },
+        {
+          "association": "CONTRIBUTOR",
+          "created_at": "2026-10-16T17:18:17Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/61986#discussion_r4297321943",
+          "path": "tests/multimodal/test_image.py",
+          "user": "mottopanikeiku"
+        }
+      ],
+      "review_comments_fetched_count": 4,
+      "files": [
+        {
+          "additions": 3,
+          "deletions": 3,
+          "filename": "docs/features/multimodal_inputs.md",
+          "status": "modified"
+        },
+        {
+          "additions": 18,
+          "deletions": 0,
+          "filename": "tests/multimodal/media/test_image.py",
+          "status": "modified"
+        },
+        {
+          "additions": 10,
+          "deletions": 2,
+          "filename": "tests/multimodal/test_hasher.py",
+          "status": "modified"
+        },
+        {
+          "additions": 65,
+          "deletions": 0,
+          "filename": "tests/multimodal/test_image.py",
+          "status": "modified"
+        },
+        {
+          "additions": 3,
+          "deletions": 3,
+          "filename": "vllm/multimodal/image.py",
+          "status": "modified"
+        },
+        {
+          "additions": 3,
+          "deletions": 8,
+          "filename": "vllm/multimodal/media/image.py",
+          "status": "modified"
+        }
+      ],
+      "files_fetched_count": 6
+    },
+    {
+      "additions": 2,
+      "association": "NONE",
+      "author": "imitater-dou",
+      "changed_files": 1,
+      "closed_at": "2026-09-08T18:55:32Z",
+      "comments": 2,
+      "created_at": "2026-09-08T05:32:11Z",
+      "deletions": 2,
+      "draft": true,
+      "head": "324ac75da603eade41bcb597f6bc9fc73b4ee860",
+      "html_url": "https://github.com/vllm-project/vllm/pull/55836",
+      "labels": [
+        "documentation",
+        "closed-as-slop"
+      ],
+      "merged": false,
+      "merged_at": null,
+      "number": 55836,
+      "review_comments": 0,
+      "state": "closed",
+      "title": "[Docs] Fix ghost --grpc-port in security guide",
+      "updated_at": "2026-09-08T18:55:32Z",
+      "body_sha256": "3b730298b70199dedf341ef4098821e9e1e9a816859919a15dd93acc994a4a74",
+      "comments_index": [
+        {
+          "association": "CONTRIBUTOR",
+          "created_at": "2026-09-08T05:32:46Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/55836#issuecomment-5579807601",
+          "type": "Bot",
+          "user": "mergify[bot]"
+        },
+        {
+          "association": "NONE",
+          "created_at": "2026-09-08T05:33:20Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/55836#issuecomment-5579812632",
+          "type": "Bot",
+          "user": "github-actions[bot]"
+        }
+      ],
+      "comments_fetched_count": 2,
+      "reviews_index": [
+        {
+          "association": "CONTRIBUTOR",
+          "html_url": "https://github.com/vllm-project/vllm/pull/55836#pullrequestreview-5138422979",
+          "state": "APPROVED",
+          "submitted_at": "2026-09-08T07:02:32Z",
+          "user": "jperezdealgaba"
+        }
+      ],
+      "reviews_fetched_count": 1,
+      "review_comments_index": [],
+      "review_comments_fetched_count": 0,
+      "files": [
+        {
+          "additions": 2,
+          "deletions": 2,
+          "filename": "docs/usage/security.md",
+          "status": "modified"
+        }
+      ],
+      "files_fetched_count": 1,
+      "selected_events": [
+        {
+          "actor": "mergify[bot]",
+          "commit_id": null,
+          "created_at": "2026-09-08T05:32:47Z",
+          "event": "labeled",
+          "label": "documentation"
+        },
+        {
+          "actor": "hmellor",
+          "commit_id": null,
+          "created_at": "2026-09-08T18:55:10Z",
+          "event": "labeled",
+          "label": "closed-as-slop"
+        },
+        {
+          "actor": "hmellor",
+          "commit_id": null,
+          "created_at": "2026-09-08T18:55:33Z",
+          "event": "closed",
+          "label": null
+        }
+      ]
+    },
+    {
+      "additions": 76,
+      "association": "CONTRIBUTOR",
+      "author": "meghaagr13",
+      "changed_files": 4,
+      "closed_at": "2026-09-15T02:24:25Z",
+      "comments": 4,
+      "created_at": "2026-09-07T18:36:59Z",
+      "deletions": 7,
+      "draft": false,
+      "head": "ea5b66ae18a7e3ee1eb14e186efc3ed44fe117c0",
+      "html_url": "https://github.com/vllm-project/vllm/pull/55765",
+      "labels": [
+        "needs-rebase",
+        "scheduler"
+      ],
+      "merged": false,
+      "merged_at": null,
+      "number": 55765,
+      "review_comments": 1,
+      "state": "closed",
+      "title": "Fix for negative prompt length",
+      "updated_at": "2026-09-15T02:24:26Z",
+      "body_sha256": "f2365233a24b3e488915d6086ae1a40c2806efa0cb1feacd21d47e65951b5936",
+      "comments_index": [
+        {
+          "association": "NONE",
+          "created_at": "2026-09-07T18:37:09Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/55765#issuecomment-5574498761",
+          "type": "Bot",
+          "user": "github-actions[bot]"
+        },
+        {
+          "association": "CONTRIBUTOR",
+          "created_at": "2026-09-07T18:37:59Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/55765#issuecomment-5574505481",
+          "type": "Bot",
+          "user": "coderabbitai[bot]"
+        },
+        {
+          "association": "CONTRIBUTOR",
+          "created_at": "2026-09-15T01:49:21Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/55765#issuecomment-5673443040",
+          "type": "Bot",
+          "user": "mergify[bot]"
+        },
+        {
+          "association": "CONTRIBUTOR",
+          "created_at": "2026-09-15T02:24:25Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/55765#issuecomment-5673722007",
+          "type": "User",
+          "user": "aoshen02"
+        }
+      ],
+      "comments_fetched_count": 4,
+      "reviews_index": [
+        {
+          "association": "NONE",
+          "html_url": "https://github.com/vllm-project/vllm/pull/55765#pullrequestreview-5134626425",
+          "state": "COMMENTED",
+          "submitted_at": "2026-09-07T18:37:03Z",
+          "user": "claude[bot]"
+        },
+        {
+          "association": "CONTRIBUTOR",
+          "html_url": "https://github.com/vllm-project/vllm/pull/55765#pullrequestreview-5134651792",
+          "state": "COMMENTED",
+          "submitted_at": "2026-09-07T18:43:31Z",
+          "user": "coderabbitai[bot]"
+        }
+      ],
+      "reviews_fetched_count": 2,
+      "review_comments_index": [
+        {
+          "association": "CONTRIBUTOR",
+          "created_at": "2026-09-07T18:43:30Z",
+          "html_url": "https://github.com/vllm-project/vllm/pull/55765#discussion_r3952035572",
+          "path": "vllm/v1/engine/input_processor.py",
+          "user": "coderabbitai[bot]"
+        }
+      ],
+      "review_comments_fetched_count": 1,
+      "files": [
+        {
+          "additions": 43,
+          "deletions": 0,
+          "filename": "tests/v1/core/test_scheduler.py",
+          "status": "modified"
+        },
+        {
+          "additions": 12,
+          "deletions": 0,
+          "filename": "tests/v1/engine/test_preprocess_error_handling.py",
+          "status": "modified"
+        },
+        {
+          "additions": 1,
+          "deletions": 1,
+          "filename": "vllm/v1/core/sched/scheduler.py",
+          "status": "modified"
+        },
+        {
+          "additions": 20,
+          "deletions": 6,
+          "filename": "vllm/v1/engine/input_processor.py",
+          "status": "modified"
+        }
+      ],
+      "files_fetched_count": 4,
+      "selected_events": [
+        {
+          "actor": "mergify[bot]",
+          "commit_id": null,
+          "created_at": "2026-09-07T18:37:35Z",
+          "event": "labeled",
+          "label": "scheduler"
+        },
+        {
+          "actor": "mergify[bot]",
+          "commit_id": null,
+          "created_at": "2026-09-15T01:49:21Z",
+          "event": "labeled",
+          "label": "needs-rebase"
+        },
+        {
+          "actor": "aoshen02",
+          "commit_id": null,
+          "created_at": "2026-09-15T02:24:25Z",
+          "event": "closed",
+          "label": null
+        }
+      ]
+    }
+  ],
+  "supplementary_replacement_pr": {
+    "head": "3e5a8476b6b99cef7a255d57f908734024298529",
+    "html_url": "https://github.com/vllm-project/vllm/pull/56844",
+    "merged": true,
+    "merged_at": "2026-09-15T01:17:42Z",
+    "number": 56844,
+    "state": "closed",
+    "title": "[Bugfix] Validate routed-expert prompt offsets before engine submission"
+  }
+}

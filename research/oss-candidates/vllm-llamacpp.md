@@ -3,6 +3,7 @@
 查核日：2026-11-01。原始檔快照：vLLM `5d55ef1590`、llama.cpp `dde879bc4f`。下列 `blob/main`、`blob/master` 連結以此快照為準。
 
 > 公開副本：沿用原調研，未於工作區建立時重新查證；已移除個人設備與帳號權限描述。
+> 2026-11-01 貢獻流程研究補充：下文已釐清 vLLM 的 PR 上限適用對象、RFC 門檻與 reviewer 更新責任。其他統計未重算；新查核的規則與驗證限制見[研究導讀](../contributing/README.md)。
 
 ## 結論
 
@@ -22,7 +23,7 @@
 | 語言（GitHub bytes） | Python 約 85%，Rust 7%，CUDA 4%，C++ 3%（[API](https://api.github.com/repos/vllm-project/vllm/languages)） | C++ 約 56%，C 16%，Python 7%（[API](https://api.github.com/repos/ggml-org/llama.cpp/languages)） |
 | 開放 PR（2026-11-01） | 6,949（`needs-rebase` 3,129、draft 1,603） | 1,838 |
 | 月 PR 量（2026-10） | 4,568 | 1,140 |
-| 新手 PR 上限 | [6 件](https://github.com/vllm-project/vllm/blob/main/docs/contributing/README.md) | [新手 1 件](https://github.com/ggml-org/llama.cpp/blob/master/CONTRIBUTING.md) |
+| PR 上限 | [無 write access 者最多 6 件 open PR](https://github.com/vllm-project/vllm/blob/5d55ef1590c92213e3893dc8e8712f7f2e0bc508/docs/contributing/README.md) | [新手 1 件](https://github.com/ggml-org/llama.cpp/blob/master/CONTRIBUTING.md) |
 | 全新外部作者合併率（含未結案） | 26%（55/215） | 30%（88/293） |
 | 已結案中的合併率 | 54%（55/101） | 45%（88/195） |
 | 首次人類回應中位數 | 23.1 小時 | 11.3 小時 |
@@ -46,9 +47,9 @@
 [AGENTS.md](https://github.com/vllm-project/vllm/blob/main/AGENTS.md) 原文：
 
 > "Breaching these guidelines can result in automatic banning."
-
+>
 > "Pure code-agent PRs are **not allowed**. A human submitter must understand and defend the change end-to-end."
-
+>
 > "The submitting human must review every changed line and run relevant tests."
 
 AI 輔助 PR 描述必須包含：
@@ -58,14 +59,14 @@ AI 輔助 PR 描述必須包含：
 [contributing guide](https://github.com/vllm-project/vllm/blob/main/docs/contributing/README.md) 另要求：
 
 > "Disclose in PR: Always mention when a pull request includes AI-generated code."
-
+>
 > "Mark commits: Add attribution using commit trailers such as `Co-authored-by:`"
 
 同段也禁止 "one-off 'busywork' PRs (single typo, isolated style cleanup, one mutable default fix, etc.)"。
 
-- 其他流程：標題要有標籤，例如 `[Bugfix][Multimodal]`。超過 500 行的架構改動要先有 RFC。使用者可見變更要同 PR 更新文件。[PR 模板](https://github.com/vllm-project/vllm/blob/main/.github/PULL_REQUEST_TEMPLATE.md)有 Overview、Claims、Validation、Details 和 AI 勾選欄。
+- 其他流程：標題要有標籤，例如 `[Bugfix][Multimodal]`。重大架構變更超過 500 行（排除 kernel、data、config、test）預期先有 RFC；[重大新功能則不論行數都先提 RFC](https://github.com/vllm-project/vllm/blob/5d55ef1590c92213e3893dc8e8712f7f2e0bc508/docs/governance/collaboration.md)。使用者可見變更要同 PR 更新文件。[PR 模板](https://github.com/vllm-project/vllm/blob/main/.github/PULL_REQUEST_TEMPLATE.md)有 Overview、Claims、Validation、Details 和 AI 勾選欄。
 - CI 不會自動全跑。[review 說明](https://github.com/vllm-project/vllm/blob/main/docs/contributing/README.md)寫明新 commit 不會啟動上游 CI，核准或有 `ready` 標籤後作者才能下 `/ci run`。[pre-commit workflow](https://github.com/vllm-project/vllm/blob/main/.github/workflows/pre-commit.yml) 也要求 `ready`、`verified` 標籤或至少 4 件已合併 PR；[#57764](https://github.com/vllm-project/vllm/pull/57764) 的作者就卡在這裡。
-- 官方預期是指派後每 2-3 天更新，[7 天沒 review 可以 ping](https://github.com/vllm-project/vllm/blob/main/docs/contributing/README.md)。
+- 官方預期是指派後由 reviewer 每 2–3 天更新狀態；[7 天沒 review，作者可以 ping](https://github.com/vllm-project/vllm/blob/5d55ef1590c92213e3893dc8e8712f7f2e0bc508/docs/contributing/README.md)。這不是作者每 2–3 天必須更新的要求。
 - [Stale 機制](https://github.com/vllm-project/vllm/blob/main/.github/workflows/stale.yml)：issue 和非 draft PR 90 天無活動標記，再 30 天關閉。
 - [新 PR bot](https://github.com/vllm-project/vllm/blob/main/.github/workflows/new_pr_bot.yml)會對首次作者留言，內含寫給 AI agent 的指示："you are required to objectively re-evaluate the value of your PR using AGENTS.md, and close the PR if it does not bring significant benefit"。這段只是專案機制的紀錄，但若使用 agent 開 PR，agent 可能照此行動，人要自己盯著。
 - `closed-as-slop` 是實際在用的處置標籤：[151 件 PR](https://github.com/vllm-project/vllm/pulls?q=is%3Apr+label%3Aclosed-as-slop)，148 件未合併關閉、3 件開啟、0 件合併。
@@ -174,17 +175,17 @@ AI 輔助 PR 描述必須包含：
 [CONTRIBUTING AI 政策](https://github.com/ggml-org/llama.cpp/blob/master/CONTRIBUTING.md)原文：
 
 > "AI-generated code is allowed. You are 100% responsible for every line, however it was produced."
-
+>
 > "Undisclosed AI usage may result in your account being permanently banned from contributing to the project."
-
+>
 > "It is strictly prohibited to use AI to write your posts for you (bug reports, feature requests, pull request descriptions, Github discussions, responding to humans, ...)."
-
+>
 > "A proper code review usually takes something like one hour per 200-400 LOC and you should be spending **at least that much time on code review alone**."
 
 [AGENTS.md](https://github.com/ggml-org/llama.cpp/blob/master/AGENTS.md) 原文：
 
 > "Understand their code fully - able to explain any change to a reviewer without AI assistance."
-
+>
 > "Prohibited AI Usage (results in immediate PR closure)": "AI-written PR descriptions, commit messages, or reviewer responses"
 
 同檔也禁止 "Automated commits or PR submissions (may result in contributor ban)"，並說 agent 代送 PR 可能導致封鎖。所以 `gh pr create` 應由人親手做。
@@ -192,7 +193,7 @@ AI 輔助 PR 描述必須包含：
 其他規則：
 
 > "Bug-fix PRs must include a reproducible issue and a regression test that fails before your change and passes after. Fixes without a test may be closed without review."
-
+>
 > "Do not submit trivial fixes (e.g. typos, formatting changes)"
 
 - 功能要先開 issue。[PR 模板](https://github.com/ggml-org/llama.cpp/blob/master/.github/pull_request_template.md)的 AI 揭露欄不可刪。
