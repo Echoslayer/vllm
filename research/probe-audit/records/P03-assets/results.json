@@ -1,0 +1,42 @@
+{
+  "mistral_common": "1.13.0",
+  "pillow": "13.0.0",
+  "results": [
+    {
+      "policy": "preserve_original_bytes",
+      "mistral_size": [
+        3,
+        2
+      ],
+      "vllm_size": [
+        2,
+        3
+      ],
+      "pixels_equal": false
+    },
+    {
+      "policy": "current_helper",
+      "mistral_size": [
+        3,
+        2
+      ],
+      "vllm_size": [
+        3,
+        2
+      ],
+      "pixels_equal": true
+    },
+    {
+      "policy": "normalize_before_helper",
+      "mistral_size": [
+        2,
+        3
+      ],
+      "vllm_size": [
+        2,
+        3
+      ],
+      "pixels_equal": true
+    }
+  ]
+}

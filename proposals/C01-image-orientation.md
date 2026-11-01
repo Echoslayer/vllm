@@ -10,6 +10,12 @@
 
 When a caller passes a PIL image carrying EXIF orientation to `encode_image_url`, decoding through the connector and parser can produce a different orientation from passing the original PIL image directly. P01 records 24 orientation cases; P02 reproduces swapped dimensions in six orientation-6 cases through the real synchronous/asynchronous connector and parser. The records pin the vLLM SHA and environment.
 
+## Mistral 契約補查 / Mistral contract follow-up
+
+[P03](../research/probe-audit/records/P03.md)直接比較 mistral-common 與 vLLM decoder：預轉正後兩者一致，故 #62418 不是此方案必然不相容的證據；但 Mistral 相對原始 bytes 看到的方向會改變。這項語意變更仍需揭露與模型評估，不能把 decoder 一致當成模型行為不變。
+
+P03 directly compares the mistral-common and vLLM decoders. Both agree after pre-normalization, so #62418 does not establish an inherent incompatibility. However, the orientation seen by Mistral changes relative to the original bytes. This semantic change still requires disclosure and model evaluation; decoder agreement does not prove unchanged model behavior.
+
 ## 建議範圍 / Suggested scope
 
 先確認 `ImageMediaIO.encode_base64` 應如何保存可見方向，再於其既有 owner 做最小修正，從公開 `encode_image_url` 入口加可失敗的回歸測試。P02 的預先正規化實驗只是支持此方向的證據，不是已審查的補丁。
