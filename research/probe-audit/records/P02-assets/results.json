@@ -1,0 +1,122 @@
+[
+  {
+    "source_format": "PNG",
+    "mode": "RGB",
+    "output_format": "PNG",
+    "direct_pil_size": [
+      2,
+      3
+    ],
+    "original_data_url_matches_pil": true,
+    "encoded_sync_size": [
+      3,
+      2
+    ],
+    "sync_async_pixels_match": true,
+    "pre_normalized_size": [
+      2,
+      3
+    ],
+    "pre_normalized_pixels_match": true
+  },
+  {
+    "source_format": "PNG",
+    "mode": "RGB",
+    "output_format": "JPEG",
+    "direct_pil_size": [
+      2,
+      3
+    ],
+    "original_data_url_matches_pil": true,
+    "encoded_sync_size": [
+      3,
+      2
+    ],
+    "sync_async_pixels_match": true,
+    "pre_normalized_size": [
+      2,
+      3
+    ],
+    "pre_normalized_pixels_match": false
+  },
+  {
+    "source_format": "PNG",
+    "mode": "RGBA",
+    "output_format": "PNG",
+    "direct_pil_size": [
+      2,
+      3
+    ],
+    "original_data_url_matches_pil": true,
+    "encoded_sync_size": [
+      3,
+      2
+    ],
+    "sync_async_pixels_match": true,
+    "pre_normalized_size": [
+      2,
+      3
+    ],
+    "pre_normalized_pixels_match": true
+  },
+  {
+    "source_format": "PNG",
+    "mode": "RGBA",
+    "output_format": "JPEG",
+    "direct_pil_size": [
+      2,
+      3
+    ],
+    "original_data_url_matches_pil": true,
+    "encoded_sync_size": [
+      3,
+      2
+    ],
+    "sync_async_pixels_match": true,
+    "pre_normalized_size": [
+      2,
+      3
+    ],
+    "pre_normalized_pixels_match": false
+  },
+  {
+    "source_format": "JPEG",
+    "mode": "RGB",
+    "output_format": "PNG",
+    "direct_pil_size": [
+      2,
+      3
+    ],
+    "original_data_url_matches_pil": true,
+    "encoded_sync_size": [
+      3,
+      2
+    ],
+    "sync_async_pixels_match": true,
+    "pre_normalized_size": [
+      2,
+      3
+    ],
+    "pre_normalized_pixels_match": true
+  },
+  {
+    "source_format": "JPEG",
+    "mode": "RGB",
+    "output_format": "JPEG",
+    "direct_pil_size": [
+      2,
+      3
+    ],
+    "original_data_url_matches_pil": true,
+    "encoded_sync_size": [
+      3,
+      2
+    ],
+    "sync_async_pixels_match": true,
+    "pre_normalized_size": [
+      2,
+      3
+    ],
+    "pre_normalized_pixels_match": false
+  }
+]

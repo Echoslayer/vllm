@@ -12,17 +12,18 @@ This directory collects proposals and evidence for a first vLLM contribution. Ea
 
 ## 提案總表 / Proposal index
 
-尚無可投稿提案。[P01](../research/probe-audit/records/P01.md)已重現 PNG 編碼往返的 EXIF 方向差異；使用場景與預期仍待確認。
+已有一張研究候選卡，尚無可投稿提案。P01／P02 已重現方向差異；待確定修正契約與模型影響。
 
-No proposal is ready for submission. [P01](../research/probe-audit/records/P01.md) reproduces an EXIF orientation difference after PNG encoding; caller impact and the expected contract still need confirmation.
+One research candidate is recorded; none is ready for submission. P01/P02 reproduce orientation differences; the fix contract and model impact remain to be established.
 
 | 提案 / Proposal | 證據 / Evidence | 狀態 / Status | 下一步 / Next step |
 | --- | --- | --- | --- |
+| [C01：EXIF orientation](C01-image-orientation.md) | [P02](../research/probe-audit/records/P02.md) | 研究候選 / Research candidate | 確認契約與最小修正 / Establish contract and minimal fix |
 
 參考：[專案選擇調研](../research/oss-candidates/vllm-llamacpp.md)、[教程查核](../research/tutorial-audit/README.md)、[探測式查核](../research/probe-audit/README.md)。
 
 References: [project selection research](../research/oss-candidates/vllm-llamacpp.md), [tutorial audit](../research/tutorial-audit/README.md), and [probe audit](../research/probe-audit/README.md).
 
-如何準備第一筆貢獻，先讀[貢獻研究導讀](../research/contributing/README.md)。本輪僅收集資料，尚未新增提案。
+如何準備第一筆貢獻，先讀[貢獻研究導讀](../research/contributing/README.md)。本輪新增研究候選卡，未投稿。
 
-For guidance on a first contribution, start with the [contribution research guide](../research/contributing/README.md). This round gathers evidence; it adds no proposal.
+For guidance on a first contribution, start with the [contribution research guide](../research/contributing/README.md). This round adds a research candidate, with no upstream submission.

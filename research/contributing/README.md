@@ -21,7 +21,7 @@
 2. **先看一個問題能否驗證，再決定要不要接。** `media/` 適合追資料流，但程式是 Python 不代表測試免安裝；單跑媒體測試仍會載入整套測試的共用依賴。第一輪的[靜態判讀](notes/code-and-validation.md)已由 [T01](../tutorial-audit/records/T01.md)補上圖片／base 的本機證據；不能外推到完整 media 或模型服務。
 3. **把「看見合併」與「知道為何合併」分開。** 案例可以示範改動與審查，但不能證明某種題目比較容易合併，也不能只憑關閉標籤斷言原因。每件的已知與未知列在[案例筆記](notes/pr-cases.md)。
 
-第三輪已完成 [P01 圖片邊界探測](../probe-audit/records/P01.md)：新增實跑 11 件既有測試全過，PNG 編碼往返則重現 EXIF 方向差異。下一步確認使用者入口與預期，再決定是否修正；目前不是可直接投稿的提案。
+第三輪已完成 [P01 圖片邊界探測](../probe-audit/records/P01.md)：新增實跑 11 件既有測試全過，PNG 編碼往返則重現 EXIF 方向差異。後續 [P02](../probe-audit/records/P02.md)已追到真實 parser／data URL connector 與 benchmark 獨立分支，並整理 [C01 候選卡](../../proposals/C01-image-orientation.md)。下一步確定修正契約與最小回歸測試；尚未投稿。
 
 ## 如何讀證據
 

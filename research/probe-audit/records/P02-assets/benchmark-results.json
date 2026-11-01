@@ -1,0 +1,23 @@
+[
+  {
+    "input": "pil",
+    "loaded_size": [
+      3,
+      2
+    ]
+  },
+  {
+    "input": "bytes_dict",
+    "loaded_size": [
+      3,
+      2
+    ]
+  },
+  {
+    "input": "data_url",
+    "loaded_size": [
+      2,
+      3
+    ]
+  }
+]
