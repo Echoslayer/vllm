@@ -1,6 +1,6 @@
 # 教程查核計畫
 
-目前只建立紀錄骨架，尚未安裝或測試 vLLM。
+2026-11-01 已完成 [T01](records/T01.md)：Mac CPU 安裝、正常測試收集及圖片／base 兩檔共 23 件測試通過。下一輪可從圖片路徑探測，或先確認 connector 的資產與依賴，再擴大驗證。
 
 1. 閱讀 vLLM 的 `AGENTS.md` 與貢獻指南，確認當時的規則。
 2. 選出與 `vllm/multimodal/media/` 有關的官方範例，加入[清單](INVENTORY.md)。
