@@ -1,0 +1,504 @@
+{
+  "orientation": [
+    {
+      "mode": "RGB",
+      "orientation": 1,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": true,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        3,
+        2
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "RGB",
+      "orientation": 2,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": false,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        3,
+        2
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "RGB",
+      "orientation": 3,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": false,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        3,
+        2
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "RGB",
+      "orientation": 4,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": false,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        3,
+        2
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "RGB",
+      "orientation": 5,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": false,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        2,
+        3
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "RGB",
+      "orientation": 6,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": false,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        2,
+        3
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "RGB",
+      "orientation": 7,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": false,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        2,
+        3
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "RGB",
+      "orientation": 8,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": false,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        2,
+        3
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "RGBA",
+      "orientation": 1,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": true,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        3,
+        2
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "RGBA",
+      "orientation": 2,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": false,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        3,
+        2
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "RGBA",
+      "orientation": 3,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": false,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        3,
+        2
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "RGBA",
+      "orientation": 4,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": false,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        3,
+        2
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "RGBA",
+      "orientation": 5,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": false,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        2,
+        3
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "RGBA",
+      "orientation": 6,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": false,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        2,
+        3
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "RGBA",
+      "orientation": 7,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": false,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        2,
+        3
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "RGBA",
+      "orientation": 8,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": false,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        2,
+        3
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "LA",
+      "orientation": 1,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": true,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        3,
+        2
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "LA",
+      "orientation": 2,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": false,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        3,
+        2
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "LA",
+      "orientation": 3,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": false,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        3,
+        2
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "LA",
+      "orientation": 4,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": false,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        3,
+        2
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "LA",
+      "orientation": 5,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": false,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        2,
+        3
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "LA",
+      "orientation": 6,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": false,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        2,
+        3
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "LA",
+      "orientation": 7,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": false,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        2,
+        3
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "mode": "LA",
+      "orientation": 8,
+      "load_bytes_matches": true,
+      "preserve_mode_matches": true,
+      "encode_roundtrip_matches": false,
+      "encode_after_normalization_matches": true,
+      "encoded_exif_orientation": null,
+      "expected_size": [
+        2,
+        3
+      ],
+      "encoded_size": [
+        3,
+        2
+      ]
+    }
+  ],
+  "transparency": [
+    {
+      "mode": "RGBA",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "matches": true
+    },
+    {
+      "mode": "RGBA",
+      "background": [
+        10,
+        20,
+        30
+      ],
+      "matches": true
+    },
+    {
+      "mode": "LA",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "matches": true
+    },
+    {
+      "mode": "LA",
+      "background": [
+        10,
+        20,
+        30
+      ],
+      "matches": true
+    },
+    {
+      "mode": "P",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "matches": true
+    },
+    {
+      "mode": "P",
+      "background": [
+        10,
+        20,
+        30
+      ],
+      "matches": true
+    },
+    {
+      "mode": "L",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "matches": true
+    },
+    {
+      "mode": "L",
+      "background": [
+        10,
+        20,
+        30
+      ],
+      "matches": true
+    },
+    {
+      "mode": "RGB",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "matches": true
+    },
+    {
+      "mode": "RGB",
+      "background": [
+        10,
+        20,
+        30
+      ],
+      "matches": true
+    }
+  ]
+}

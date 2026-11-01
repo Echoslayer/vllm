@@ -12,9 +12,9 @@ This directory collects proposals and evidence for a first vLLM contribution. Ea
 
 ## 提案總表 / Proposal index
 
-尚無已確認提案。預定先查 `vllm/multimodal/media/` 與 `tests/multimodal/`，本次尚未開始找 bug 或跑測試。
+尚無可投稿提案。[P01](../research/probe-audit/records/P01.md)已重現 PNG 編碼往返的 EXIF 方向差異；使用場景與預期仍待確認。
 
-No proposals have been confirmed. The initial area is `vllm/multimodal/media/` and `tests/multimodal/`. Bug investigation and tests have not started.
+No proposal is ready for submission. [P01](../research/probe-audit/records/P01.md) reproduces an EXIF orientation difference after PNG encoding; caller impact and the expected contract still need confirmation.
 
 | 提案 / Proposal | 證據 / Evidence | 狀態 / Status | 下一步 / Next step |
 | --- | --- | --- | --- |

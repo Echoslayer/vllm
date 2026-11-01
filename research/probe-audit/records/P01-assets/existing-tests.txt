@@ -1,0 +1,27 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.12, pytest-9.2.0, pluggy-1.7.0 -- <VLLM_WORKTREE>/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: <VLLM_WORKTREE>
+configfile: pyproject.toml
+plugins: anyio-4.16.0
+collecting ... collected 11 items
+
+tests/multimodal/test_image.py::test_rgb_to_rgb PASSED                   [  9%]
+tests/multimodal/test_image.py::test_rgba_to_rgb PASSED                  [ 18%]
+tests/multimodal/test_image.py::test_palette_with_trns_to_rgb PASSED     [ 27%]
+tests/multimodal/test_image.py::test_transparency_offline_matches_online[rgb_png] PASSED [ 36%]
+tests/multimodal/test_image.py::test_transparency_offline_matches_online[rgb_png_to_rgb] PASSED [ 45%]
+tests/multimodal/test_image.py::test_transparency_offline_matches_online[gif] PASSED [ 54%]
+tests/multimodal/test_image.py::test_transparency_offline_matches_online[gif_to_rgb] PASSED [ 63%]
+tests/multimodal/test_image.py::test_transparency_offline_matches_online[rgba_png] PASSED [ 72%]
+tests/multimodal/test_image.py::test_l_mode_no_trns_to_rgb PASSED        [ 81%]
+tests/multimodal/test_image.py::test_exif_transpose_normalizes_orientation PASSED [ 90%]
+tests/multimodal/test_image.py::test_normalize_image_no_exif PASSED      [100%]
+
+=============================== warnings summary ===============================
+tests/multimodal/test_image.py::test_exif_transpose_normalizes_orientation
+  <VLLM_WORKTREE>/.venv/lib/python3.12/site-packages/PIL/TiffImagePlugin.py:982: UserWarning: Corrupt EXIF data.  Expecting to read 12 bytes but only got 8. 
+    warnings.warn(str(msg))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 11 passed, 1 warning in 1.50s =========================
