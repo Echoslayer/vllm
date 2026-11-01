@@ -1,8 +1,8 @@
 # C01：圖片編碼的 EXIF 方向一致性 / EXIF orientation consistency in image encoding
 
-**狀態：研究候選，未投稿、未修正。** 本卡用於決定工作範圍，不是可直接送出的 PR 說明。
+**狀態：已有局部驗證的實驗補丁，未投稿。** 本卡用於決定工作範圍，不是可直接送出的 PR 說明。
 
-**Status: research candidate; no submission or product fix.** This card defines a possible scope, not a submission-ready PR description.
+**Status: experimental patch with focused validation; not submitted.** This card defines a possible scope, not a submission-ready PR description.
 
 ## 問題與證據 / Problem and evidence
 
@@ -25,6 +25,12 @@ First establish how `ImageMediaIO.encode_base64` should preserve visible orienta
 benchmark `process_image` 的 PIL／bytes 分支有獨立 JPEG 編碼，已另行重現方向差異；修 helper 不會涵蓋它。暫不把此分支與範例自訂 encoder 併入同一修正。
 
 The benchmark `process_image` PIL/bytes branch independently encodes JPEG and reproduces a similar difference. A helper fix would not cover it. Keep that branch and example-specific encoders outside the initial change.
+
+## 實驗進度 / Experiment status
+
+[P04](../research/probe-audit/records/P04.md)保存最新基底上的最小補丁、修改前 6 failed／2 passed，以及修改後 54 passed。已有公開 helper 回歸，但尚未符合 `tests/AGENTS.md` 要求的 LLM／服務入口回歸與模型評估；不是可投稿補丁。
+
+P04 records a minimal patch on an updated base: 6 failed / 2 passed before the fix, and 54 passed across related tests afterward. Public-helper coverage is in place, but the LLM/server regression and model evaluation required for submission remain incomplete.
 
 ## 投稿前仍缺什麼 / Before submission
 

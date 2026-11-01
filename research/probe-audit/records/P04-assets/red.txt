@@ -1,0 +1,168 @@
+..FFFFFF                                                                 [100%]
+=================================== FAILURES ===================================
+__________ test_encode_image_url_preserves_visible_orientation[3-RGB] __________
+
+mode = 'RGB', orientation = 3
+
+    @pytest.mark.parametrize("mode", ["RGB", "RGBA"])
+    @pytest.mark.parametrize("orientation", [1, 3, 6, 8])
+    def test_encode_image_url_preserves_visible_orientation(mode, orientation):
+        image = Image.new("RGB", (3, 2))
+        image.putdata([(255, 0, 0), (0, 255, 0), (0, 0, 255),
+                       (255, 255, 0), (255, 0, 255), (0, 255, 255)])
+        image = image.convert(mode)
+        image.getexif()[274] = orientation
+        transforms = {3: Image.Transpose.ROTATE_180,
+                      6: Image.Transpose.ROTATE_270,
+                      8: Image.Transpose.ROTATE_90}
+        expected = image.transpose(transforms[orientation]) if orientation != 1 else image
+        expected = expected.convert("RGB")
+        payload = encode_image_url(image).split(",", 1)[1]
+        actual = Image.open(BytesIO(pybase64.b64decode(payload)))
+        assert actual.size == expected.size
+>       assert actual.tobytes() == expected.tobytes()
+E       AssertionError: assert b'\xff\x00\x0...f\x00\xff\xff' == b'\x00\xff\xf...0\xff\x00\x00'
+E
+E         At index 0 diff: b'\xff' != b'\x00'
+E         Use -v to get more diff
+
+tests/multimodal/test_utils.py:280: AssertionError
+_________ test_encode_image_url_preserves_visible_orientation[3-RGBA] __________
+
+mode = 'RGBA', orientation = 3
+
+    @pytest.mark.parametrize("mode", ["RGB", "RGBA"])
+    @pytest.mark.parametrize("orientation", [1, 3, 6, 8])
+    def test_encode_image_url_preserves_visible_orientation(mode, orientation):
+        image = Image.new("RGB", (3, 2))
+        image.putdata([(255, 0, 0), (0, 255, 0), (0, 0, 255),
+                       (255, 255, 0), (255, 0, 255), (0, 255, 255)])
+        image = image.convert(mode)
+        image.getexif()[274] = orientation
+        transforms = {3: Image.Transpose.ROTATE_180,
+                      6: Image.Transpose.ROTATE_270,
+                      8: Image.Transpose.ROTATE_90}
+        expected = image.transpose(transforms[orientation]) if orientation != 1 else image
+        expected = expected.convert("RGB")
+        payload = encode_image_url(image).split(",", 1)[1]
+        actual = Image.open(BytesIO(pybase64.b64decode(payload)))
+        assert actual.size == expected.size
+>       assert actual.tobytes() == expected.tobytes()
+E       AssertionError: assert b'\xff\x00\x0...f\x00\xff\xff' == b'\x00\xff\xf...0\xff\x00\x00'
+E
+E         At index 0 diff: b'\xff' != b'\x00'
+E         Use -v to get more diff
+
+tests/multimodal/test_utils.py:280: AssertionError
+__________ test_encode_image_url_preserves_visible_orientation[6-RGB] __________
+
+mode = 'RGB', orientation = 6
+
+    @pytest.mark.parametrize("mode", ["RGB", "RGBA"])
+    @pytest.mark.parametrize("orientation", [1, 3, 6, 8])
+    def test_encode_image_url_preserves_visible_orientation(mode, orientation):
+        image = Image.new("RGB", (3, 2))
+        image.putdata([(255, 0, 0), (0, 255, 0), (0, 0, 255),
+                       (255, 255, 0), (255, 0, 255), (0, 255, 255)])
+        image = image.convert(mode)
+        image.getexif()[274] = orientation
+        transforms = {3: Image.Transpose.ROTATE_180,
+                      6: Image.Transpose.ROTATE_270,
+                      8: Image.Transpose.ROTATE_90}
+        expected = image.transpose(transforms[orientation]) if orientation != 1 else image
+        expected = expected.convert("RGB")
+        payload = encode_image_url(image).split(",", 1)[1]
+        actual = Image.open(BytesIO(pybase64.b64decode(payload)))
+>       assert actual.size == expected.size
+E       assert (3, 2) == (2, 3)
+E
+E         At index 0 diff: 3 != 2
+E         Use -v to get more diff
+
+tests/multimodal/test_utils.py:279: AssertionError
+_________ test_encode_image_url_preserves_visible_orientation[6-RGBA] __________
+
+mode = 'RGBA', orientation = 6
+
+    @pytest.mark.parametrize("mode", ["RGB", "RGBA"])
+    @pytest.mark.parametrize("orientation", [1, 3, 6, 8])
+    def test_encode_image_url_preserves_visible_orientation(mode, orientation):
+        image = Image.new("RGB", (3, 2))
+        image.putdata([(255, 0, 0), (0, 255, 0), (0, 0, 255),
+                       (255, 255, 0), (255, 0, 255), (0, 255, 255)])
+        image = image.convert(mode)
+        image.getexif()[274] = orientation
+        transforms = {3: Image.Transpose.ROTATE_180,
+                      6: Image.Transpose.ROTATE_270,
+                      8: Image.Transpose.ROTATE_90}
+        expected = image.transpose(transforms[orientation]) if orientation != 1 else image
+        expected = expected.convert("RGB")
+        payload = encode_image_url(image).split(",", 1)[1]
+        actual = Image.open(BytesIO(pybase64.b64decode(payload)))
+>       assert actual.size == expected.size
+E       assert (3, 2) == (2, 3)
+E
+E         At index 0 diff: 3 != 2
+E         Use -v to get more diff
+
+tests/multimodal/test_utils.py:279: AssertionError
+__________ test_encode_image_url_preserves_visible_orientation[8-RGB] __________
+
+mode = 'RGB', orientation = 8
+
+    @pytest.mark.parametrize("mode", ["RGB", "RGBA"])
+    @pytest.mark.parametrize("orientation", [1, 3, 6, 8])
+    def test_encode_image_url_preserves_visible_orientation(mode, orientation):
+        image = Image.new("RGB", (3, 2))
+        image.putdata([(255, 0, 0), (0, 255, 0), (0, 0, 255),
+                       (255, 255, 0), (255, 0, 255), (0, 255, 255)])
+        image = image.convert(mode)
+        image.getexif()[274] = orientation
+        transforms = {3: Image.Transpose.ROTATE_180,
+                      6: Image.Transpose.ROTATE_270,
+                      8: Image.Transpose.ROTATE_90}
+        expected = image.transpose(transforms[orientation]) if orientation != 1 else image
+        expected = expected.convert("RGB")
+        payload = encode_image_url(image).split(",", 1)[1]
+        actual = Image.open(BytesIO(pybase64.b64decode(payload)))
+>       assert actual.size == expected.size
+E       assert (3, 2) == (2, 3)
+E
+E         At index 0 diff: 3 != 2
+E         Use -v to get more diff
+
+tests/multimodal/test_utils.py:279: AssertionError
+_________ test_encode_image_url_preserves_visible_orientation[8-RGBA] __________
+
+mode = 'RGBA', orientation = 8
+
+    @pytest.mark.parametrize("mode", ["RGB", "RGBA"])
+    @pytest.mark.parametrize("orientation", [1, 3, 6, 8])
+    def test_encode_image_url_preserves_visible_orientation(mode, orientation):
+        image = Image.new("RGB", (3, 2))
+        image.putdata([(255, 0, 0), (0, 255, 0), (0, 0, 255),
+                       (255, 255, 0), (255, 0, 255), (0, 255, 255)])
+        image = image.convert(mode)
+        image.getexif()[274] = orientation
+        transforms = {3: Image.Transpose.ROTATE_180,
+                      6: Image.Transpose.ROTATE_270,
+                      8: Image.Transpose.ROTATE_90}
+        expected = image.transpose(transforms[orientation]) if orientation != 1 else image
+        expected = expected.convert("RGB")
+        payload = encode_image_url(image).split(",", 1)[1]
+        actual = Image.open(BytesIO(pybase64.b64decode(payload)))
+>       assert actual.size == expected.size
+E       assert (3, 2) == (2, 3)
+E
+E         At index 0 diff: 3 != 2
+E         Use -v to get more diff
+
+tests/multimodal/test_utils.py:279: AssertionError
+=========================== short test summary info ============================
+FAILED tests/multimodal/test_utils.py::test_encode_image_url_preserves_visible_orientation[3-RGB]
+FAILED tests/multimodal/test_utils.py::test_encode_image_url_preserves_visible_orientation[3-RGBA]
+FAILED tests/multimodal/test_utils.py::test_encode_image_url_preserves_visible_orientation[6-RGB]
+FAILED tests/multimodal/test_utils.py::test_encode_image_url_preserves_visible_orientation[6-RGBA]
+FAILED tests/multimodal/test_utils.py::test_encode_image_url_preserves_visible_orientation[8-RGB]
+FAILED tests/multimodal/test_utils.py::test_encode_image_url_preserves_visible_orientation[8-RGBA]
+6 failed, 2 passed, 12 deselected in 0.82s

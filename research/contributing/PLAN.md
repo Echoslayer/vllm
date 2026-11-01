@@ -29,7 +29,7 @@
 
 ## 第三輪：先選題，再決定是否擴大統計
 
-**已完成初探（2026-11-01）：** [P01](../probe-audit/records/P01.md)保存 11 件既有測試、24 組方向案例及 10 組透明背景案例。已重現 PNG 編碼往返方向差異並查重；後續 [P02](../probe-audit/records/P02.md)已補上 parser／data URL connector、benchmark 與呼叫端分析，並建立 [C01 中英研究候選卡](../../proposals/C01-image-orientation.md)。[P03](../probe-audit/records/P03.md)已區分 Mistral 的 decoder 一致性與方向語意：預轉正不必然衝突，但會改變其相對原始 bytes 的內容。下一步可驗證最小補丁；模型評估與投稿驗證仍待完成。
+**已完成初探（2026-11-01）：** [P01](../probe-audit/records/P01.md)保存 11 件既有測試、24 組方向案例及 10 組透明背景案例。已重現 PNG 編碼往返方向差異並查重；後續 [P02](../probe-audit/records/P02.md)已補上 parser／data URL connector、benchmark 與呼叫端分析，並建立 [C01 中英研究候選卡](../../proposals/C01-image-orientation.md)。[P03](../probe-audit/records/P03.md)已區分 Mistral 的 decoder 一致性與方向語意：預轉正不必然衝突，但會改變其相對原始 bytes 的內容。[P04](../probe-audit/records/P04.md)已完成最小實驗補丁與 helper 回歸的 red／green（修後相關測試 54 passed）；模型／服務入口、效能成本及投稿驗證仍待完成。
 
 從已能驗證的路徑找一個具體問題。先查現有 issue、open PR 和近期合併，確認預期行為與重現方式，再整理中英提案。查到既有修正就記錄結果，不另做重複 PR。
 

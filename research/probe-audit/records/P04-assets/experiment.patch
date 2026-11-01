@@ -1,0 +1,63 @@
+diff --git a/docs/features/multimodal_inputs.md b/docs/features/multimodal_inputs.md
+index e4cd5f56a2..b9e84ba7d0 100644
+--- a/docs/features/multimodal_inputs.md
++++ b/docs/features/multimodal_inputs.md
+@@ -105,0 +106,2 @@ Full example: [examples/generate/multimodal/vision_language_multi_image_offline.
++`vllm.multimodal.utils.encode_image_url` applies EXIF orientation before encoding, so its output pixels match the image's display orientation. This also applies when `image_mode=None`. Callers that need the original stored pixel layout should pass the original image bytes as a data URL instead; the receiving model determines how it handles EXIF.
++
+diff --git a/tests/multimodal/test_utils.py b/tests/multimodal/test_utils.py
+index 97f46de13c..dcf6753c49 100644
+--- a/tests/multimodal/test_utils.py
++++ b/tests/multimodal/test_utils.py
+@@ -2,0 +3,3 @@
++from io import BytesIO
++
++import pybase64
+@@ -258,0 +262,32 @@ def test_group_and_batch_mm_items_split_by_shared_data():
++
++
++@pytest.mark.parametrize("mode", ["RGB", "RGBA"])
++@pytest.mark.parametrize("orientation", [1, 3, 6, 8])
++def test_encode_image_url_preserves_visible_orientation(mode, orientation):
++    image = Image.new("RGB", (3, 2))
++    image.putdata(
++        [
++            (255, 0, 0),
++            (0, 255, 0),
++            (0, 0, 255),
++            (255, 255, 0),
++            (255, 0, 255),
++            (0, 255, 255),
++        ]
++    )
++    image = image.convert(mode)
++    image.getexif()[274] = orientation
++    transforms = {
++        3: Image.Transpose.ROTATE_180,
++        6: Image.Transpose.ROTATE_270,
++        8: Image.Transpose.ROTATE_90,
++    }
++    expected = image.transpose(transforms[orientation]) if orientation != 1 else image
++    expected = expected.convert("RGB")
++    payload = encode_image_url(image).split(",", 1)[1]
++    actual = Image.open(BytesIO(pybase64.b64decode(payload)))
++    assert actual.size == expected.size
++    assert actual.tobytes() == expected.tobytes()
++    assert actual.getexif().get(274, 1) == 1
++    assert image.size == (3, 2)
++    assert image.getexif()[274] == orientation
+diff --git a/vllm/multimodal/media/image.py b/vllm/multimodal/media/image.py
+index 108d684aff..47bb586965 100644
+--- a/vllm/multimodal/media/image.py
++++ b/vllm/multimodal/media/image.py
+@@ -129 +129 @@ class ImageMediaIO(MediaIO[Image.Image]):
+-        image = media
++        image = normalize_image(media)
+diff --git a/vllm/multimodal/utils.py b/vllm/multimodal/utils.py
+index 3627dd9355..c0110b2a52 100644
+--- a/vllm/multimodal/utils.py
++++ b/vllm/multimodal/utils.py
+@@ -71,0 +72 @@ def encode_image_base64(
++    EXIF orientation is applied to pixels before encoding.
+@@ -86,0 +88 @@ def encode_image_url(
++    EXIF orientation is applied to pixels before encoding.
